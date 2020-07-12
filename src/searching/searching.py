@@ -19,10 +19,10 @@ def binary_search(arr, target):
     # So we create a variable and start at zero
     start = 0
     # Next we need to find the end of the array
-    # Create a variable use the length and - 1
+    # Create a variable use the length - 1
     end = len(arr) - 1
 
-    # Next we create a loop that runs as long at the start
+    # Next we create a loop that runs as long as the start
     # and the end are NOT the same and start is LESS THAN
     # the value of end
     while start <= end:
@@ -30,7 +30,7 @@ def binary_search(arr, target):
         # We simply add the start + end and then divide
         # By two to find the median value or middle
         middle = (start + end) // 2
-        # If our middle value is the target we are search for
+        # If our middle value is the target we are searching for
         # simply return the middle value
         if arr[middle] == target:
             return middle
